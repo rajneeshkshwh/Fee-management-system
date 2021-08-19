@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Fees Management System</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background: -webkit-linear-gradient(
+          to right,
+          #293241,
+          #073b4c
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #293241, #073b4c);
+        overflow-x: hidden;
+      }
+      h1,
+      label {
+        color: white;
+      }
+      h2 {
+        font-size: 25px;
+        color: white;
+      }
+
+      .btn {
+        font-size: 25px;
+        background: -webkit-linear-gradient(
+          to right,
+          #00a896,
+          #05668d
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #00a896, #05668d);
+        color: white;
+        transition: all 1s;
+      }
+      .btn:hover {
+        color: white;
+        background: -webkit-linear-gradient(
+          to right,
+          #05668d,
+          #00a896
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #05668d, #00a896);
+        transition: all 1s;
+      }
+      .techo {
+        text-align: center;
+        padding-top: 18px;
+        letter-spacing: 5px;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <?php
+// remove all session variables
+session_unset();
+
+// destroy the session
+session_destroy();
+?>
+
+      <div class="row justify-content-center">
+        <h1>Fees Management System</h1>
+      </div>
+      <hr />
+      <hr />
+      <div class="row justify-content-center">
+        <h2>YOU HAVE BEEN LOGOUT SUCCESSFULLY</h2>
+      </div>
+      <hr />
+      <hr />
+      <div class="row justify-content-center">
+        <a href="index.html" class="btn">Login Page</a>
+      </div>
+    </div>
+    <div
+      class="container-fluid fixed-bottom p-0"
+      style="
+        background: -webkit-linear-gradient(
+          to right,
+          #02c39a,
+          #00a896
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #02c39a, #00a896);
+      "
+    >
+      <p class="techo">Made By Orions Technologies</p>
+    </div>
+  </body>
+</html>
